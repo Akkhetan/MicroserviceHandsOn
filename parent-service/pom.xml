@@ -6,11 +6,17 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>parent-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>microservices/product-service</module>
+		<module>microservices/review-service</module>
+		<module>microservices/recommendation-service</module>
+		<module>microservices/product-composite-service</module>
+	</modules>
 	<name>parent-service</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
