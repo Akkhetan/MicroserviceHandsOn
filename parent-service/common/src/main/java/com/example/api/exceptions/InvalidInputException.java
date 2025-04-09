@@ -1,4 +1,4 @@
-package com.example.util.exceptions;
+package com.example.api.exceptions;
 
 public class InvalidInputException extends RuntimeException {
   public InvalidInputException() {}

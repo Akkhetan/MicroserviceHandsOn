@@ -2,6 +2,8 @@ package com.example.product_service.services;
 
 import com.example.api.core.product.Product;
 import com.example.api.core.product.ProductService;
+import com.example.api.exceptions.InvalidInputException;
+import com.example.api.exceptions.NotFoundException;
 import com.example.util.http.ServiceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,11 +28,11 @@ public class ProductServiceImpl implements ProductService {
     LOG.debug("/product return the found product for productId={}", productId);
 
     if (productId < 1) {
-      throw new com.example.util.exceptions.InvalidInputException("Invalid productId: " + productId);
+      throw new InvalidInputException("Invalid productId: " + productId);
     }
 
     if (productId == 13) {
-      throw new com.example.util.exceptions.NotFoundException("No product found for productId: " + productId);
+      throw new NotFoundException("No product found for productId: " + productId);
     }
 
     return new Product(productId, "name-" + productId, 123, serviceUtil.getServiceAddress());

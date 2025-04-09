@@ -4,3 +4,15 @@ server.error.include-message: always
 logging:
   level:
     root: INFO
+    com.example: DEBUG
+
+app:
+  product-service:
+    host: localhost
+    port: 7001
+  recommendation-service:
+    host: localhost
+    port: 7002
+  review-service:
+    host: localhost
+    port: 7003
