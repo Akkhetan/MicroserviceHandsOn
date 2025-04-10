@@ -1,0 +1,6 @@
+- Built initial microservices using **Spring Boot**.
+- Added **APIs using Spring WebFlux** for three core services.
+- Implemented a **composite service** to aggregate data from the core services.
+- Used **RestTemplate** to perform HTTP requests to core service APIs.
+- Added **error handling logic** in the services.
+- Learned to write **isolated tests** for microservices.
